@@ -1396,7 +1396,7 @@ export default function SkillBridge() {
         : MOCK_MENTORS.filter(m => m.industry === selectedIndustryFilter);
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+        <div className="min-h-screen w-[100vw] bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
             {/* Header */}
             <header className="bg-white/80 backdrop-blur-xl shadow-xl sticky top-0 z-50 border-b border-gray-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -1417,8 +1417,8 @@ export default function SkillBridge() {
                             <button
                                 onClick={() => setCurrentView('p2p')}
                                 className={`px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 ${currentView === 'p2p'
-                                        ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30'
-                                        : 'text-gray-700 hover:bg-gray-100'
+                                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30'
+                                    : 'text-gray-700 hover:bg-gray-100'
                                     }`}
                             >
                                 Free Practice
@@ -1426,8 +1426,8 @@ export default function SkillBridge() {
                             <button
                                 onClick={() => setCurrentView('marketplace')}
                                 className={`px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 ${currentView === 'marketplace'
-                                        ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30'
-                                        : 'text-gray-700 hover:bg-gray-100'
+                                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30'
+                                    : 'text-gray-700 hover:bg-gray-100'
                                     }`}
                             >
                                 Find Mentors
@@ -1435,8 +1435,8 @@ export default function SkillBridge() {
                             <button
                                 onClick={() => setCurrentView('community')}
                                 className={`px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 ${currentView === 'community'
-                                        ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30'
-                                        : 'text-gray-700 hover:bg-gray-100'
+                                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30'
+                                    : 'text-gray-700 hover:bg-gray-100'
                                     }`}
                             >
                                 Community
@@ -2181,8 +2181,8 @@ function MarketplaceView({ selectedIndustryFilter, setSelectedIndustryFilter, fi
                                             setShowIndustryDropdown(false);
                                         }}
                                         className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm font-semibold ${selectedIndustryFilter === 'All'
-                                                ? 'bg-blue-700 text-white'
-                                                : 'hover:bg-gray-100'
+                                            ? 'bg-blue-700 text-white'
+                                            : 'hover:bg-gray-100'
                                             }`}
                                     >
                                         All Industries
@@ -2195,8 +2195,8 @@ function MarketplaceView({ selectedIndustryFilter, setSelectedIndustryFilter, fi
                                                 setShowIndustryDropdown(false);
                                             }}
                                             className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm font-semibold ${selectedIndustryFilter === ind
-                                                    ? 'bg-blue-700 text-white'
-                                                    : 'hover:bg-gray-100'
+                                                ? 'bg-blue-700 text-white'
+                                                : 'hover:bg-gray-100'
                                                 }`}
                                         >
                                             {ind}
